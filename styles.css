@@ -2,22 +2,36 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-image: url('images/background.jpg');
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
 }
 
 header {
-    background-color: #000125;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 8rem;
-    text-align: left;
-    border-radius: 8px;
+    text-align: left; 
+    margin: 2rem;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 1rem 0;
 }
 
 nav ul {
     display: flex;
-    justify-content: right;
-    background-color: #000125;
+    justify-content: right;  
     padding: 0.6rem;
+    margin: 2rem;
+    
 }
 
 nav ul li {
@@ -26,16 +40,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-decoration: black;
+    font-size: 18px;
 }
 
 section {
-    margin: 2rem;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
+    margin: 6rem;
+    padding: 1rem; 
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
 }
 
 ul {
@@ -79,3 +93,39 @@ ul {
     font-weight: bold;
   }
   
+  .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .certificate-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .certficate-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .certficate-card p {
+    color: #555;
+  }
+  
+  .certificate-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
