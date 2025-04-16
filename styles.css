@@ -10,7 +10,7 @@ body {
 
 header {
     color: rgb(0, 0, 0);
-    padding: 8rem;
+    padding: 5rem;
     text-align: left; 
     margin: 2rem;
 
@@ -46,8 +46,8 @@ nav ul li a {
 }
 
 section {
-    margin: 6rem;
-    padding: 1rem; 
+    margin: 7rem;
+    padding: .5rem; 
     border-radius: 8px;
     
 }
@@ -129,3 +129,81 @@ ul {
     text-decoration: none;
     font-weight: bold;
   }
+
+  .project header {
+    margin-bottom: 0;
+  }
+
+  .project-details {
+    margin-top: 0;
+  }
+
+  .slider {
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+    box-shadow: #333 0px 0px 10px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    width: 100%;
+  }
+  
+  .slides img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    cursor: pointer;
+    padding: 0 12px;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  
+  button.prev:hover,
+  button.next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dots .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dots .dot.active {
+    background-color: #333;
+  }
+  

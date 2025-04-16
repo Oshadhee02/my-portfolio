@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <h1>Plane Management System</h1>
+    <h1>✈️ Plane Management System</h1>
     <p>Java CLI App for Airline Ticket Management</p>
   </header>
 
@@ -21,9 +21,8 @@
     <ul>
       <li>💻 Built with Java (OOP Principles)</li>
       <li>📋 Features: Book, Cancel, View, Search Seats</li>
-      <li>🧪 Tested with multiple users and edge cases</li>
     </ul>
-    <a href="https://github.com/yourusername/plane-system" target="_blank">🔗 GitHub Repo</a>
+    <a href="https://github.com/yourusername/plane-system" target="_blank">🔗 GitHub Repo</a><br><br>
     <a href="../index.html">⬅ Back to Portfolio</a>
   </section>
 </body>
