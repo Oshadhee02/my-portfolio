@@ -9,21 +9,24 @@ body {
 }
 
 header {
-    color: rgb(0, 0, 0);
-    padding: 5rem;
-    text-align: left; 
-    margin: 2rem;
-
+  padding: 2rem;  
+  margin: 0 2rem; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 header h1 {
     font-size: 2.5rem;
     margin: 0;
+    color: #333;
 }
 
 header p {
     font-size: 1.5rem;
     margin: 0.5rem 0 1rem 0;
+    color: #555;
 }
 
 nav ul {
@@ -40,20 +43,60 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: #333;
     text-decoration: black;
     font-size: 18px;
 }
 
 section {
-    margin: 7rem;
-    padding: .5rem; 
+    margin: 3rem 7rem;
+    padding: 0.5rem; 
     border-radius: 8px;
-    
+}
+
+section h2 {
+  animation: slideInLeft 1.2s ease-out;
+  color: #333;
 }
 
 ul {
     padding-left: 1.5rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 9rem;
+}
+
+
+.about-me p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 4rem;
+    text-align: justify;
+}
+
+.profile-pic {
+    width: 290px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 3rem 11rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-pic:hover {
+  transform: translateY(-3px);
 }
 
 .project-grid {
@@ -79,10 +122,12 @@ ul {
   .project-card h3 {
     margin-top: 0;
     font-size: 1.2rem;
+    color: #333;
   }
   
   .project-card p {
     color: #555;
+    
   }
   
   .project-card a {
@@ -95,7 +140,7 @@ ul {
   
   .certificate-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
   }
@@ -116,6 +161,7 @@ ul {
   .certficate-card h3 {
     margin-top: 0;
     font-size: 1.2rem;
+    color: #333;
   }
   
   .certficate-card p {
@@ -130,13 +176,6 @@ ul {
     font-weight: bold;
   }
 
-  .project header {
-    margin-bottom: 0;
-  }
-
-  .project-details {
-    margin-top: 0;
-  }
 
   .slider {
     position: relative;
@@ -144,8 +183,7 @@ ul {
     margin: 2rem auto;
     overflow: hidden;
     box-shadow: #333 0px 0px 10px;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 6rem;
   }
   
   .slides {
@@ -206,4 +244,80 @@ ul {
   .dots .dot.active {
     background-color: #333;
   }
+
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  .popup .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  
+  
   

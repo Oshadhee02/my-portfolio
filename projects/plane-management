@@ -14,7 +14,6 @@
   </header>
 
   <section class="project-detail">
-    <img src="../images/plane1.png" alt="Plane System CLI">
     <p>
       A Java-based command line system that allows users to book, cancel, and check airplane tickets and seating. It includes data validation, seat availability checking, and clear CLI formatting.
     </p>
@@ -22,7 +21,7 @@
       <li>💻 Built with Java (OOP Principles)</li>
       <li>📋 Features: Book, Cancel, View, Search Seats</li>
     </ul>
-    <a href="https://github.com/yourusername/plane-system" target="_blank">🔗 GitHub Repo</a><br><br>
+    <a href="https://github.com/Oshadhee02/plane-system" target="_blank">GitHub Repo</a><br><br>
     <a href="../index.html">⬅ Back to Portfolio</a>
   </section>
 </body>

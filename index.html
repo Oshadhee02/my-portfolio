@@ -19,17 +19,38 @@
   </nav>
     
     <header>
-        <h1>Hey there!<br>
-          I'm Sapna Oshadhee</h1>
-        <p>Computer Science Student | Designer</p>
+      <div class="about-container">
+        <div class="about-text">
+          <h1>Hey there! <br>I'm Sapna Oshadhee</h1>
+          <p>Computer Science Student | Designer</p>
+        </div>
+        <div class="profile-pic">
+          <img src="images/profile.jpg" alt="Profile Pic">
+        </div>
+      </div>
+      
     </header>
     
     <section id="about">
-        <h2>About Me</h2>
-        <p>"I'm a 2nd year undergraduate at University of Westminster.</p>
+        <h2 class="reveal-left">About Me</h2>
+        <div class="about-me">
+        <p class="reveal-right">
+          " Hi! I'm a passionate second-year Computer Science undergraduate at the University of Westminster, with a strong interest in <strong>UI/UX design</strong> and creating impactful digital experiences. 
+        <br>
+        
+          I love building meaningful and creative solutions that enhance everyday life—especially in the realms of <strong>education</strong> and <strong>social impact</strong>. My journey so far includes a range of academic and personal projects, from developing a 2D virtual science lab for A/L students to crafting smart user interfaces for public transport systems.
+        <br>
+      
+          Whether it's designing intuitive front-end experiences or tackling complex backend logic, I enjoy every step of the process. Currently, I'm diving deeper into design tools and web technologies like <strong>Figma</strong>, <strong>Photoshop</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> to sharpen my creative and technical edge.
+        <br>
+      
+          I'm always excited to learn, grow, and collaborate on projects that make a real difference. "
+        </p>
+        </div>
+        
     </section>
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 class="reveal-left">Skills</h2>
         <ul>
             <li>Figma</li>
             <li>Axure</li>
@@ -42,21 +63,17 @@
         </ul>
     </section>
     <section id="projects">
-        <h2>Projects</h2>
+        <h2 class="reveal-left">Projects</h2>
         <div class="project-grid">
-          <div class="project-card">
-            <h3> </h3>
-            <p>.</p>
-            <a href="projects/.html">View Project</a>
-          </div>
+          
           <div class="project-card">
             <h3>🔬 LabMaster</h3>
-            <p>2D Virtual Lab for A/L students with quizzes, notes & login/signup integration.</p>
+            <p>2D Virtual Lab for A/L students with quizzes, notes & login/signup integration using Unity.</p>
             <a href="projects/lab-master.html">View Project</a>
           </div>
           <div class="project-card">
             <h3>🚌 WayFinder</h3>
-            <p>Highway bus tracking system with carpooling feature and UI design.</p>
+            <p>UI design for a Highway bus tracking system with carpooling feature using Figma.</p>
             <a href="projects/bus-tracking.html">View Project</a>
           </div>
           <div class="project-card">
@@ -73,27 +90,38 @@
       </section>
 
       <section id="certificates">
-        <h2>Certificates</h2>
+        <h2 class="reveal-left">Certificates</h2>
         <div class="certificate-grid">
           <div class="certificate-card">
-            <h3>Hult Prize</h3>
-            <p></p>
-            <a href="#">View Certificate</a>
+            <h3>🏆 Hult Prize 2025</h3>
+            <p>Participated in the Hult Prize 2025 competition with our <strong>LabMaster</strong> project.</p>
+            <a href="#" onclick="openPopup('images/hult-certificate.jpg'); return false;">View Certificate</a>
           </div>
+      
           <div class="certificate-card">
-            <h3>Live College</h3>
-            <p></p>
-            <a href="#">View Certificate</a>
-          </div>        
+            <h3>🎨 Photoshop Certificate</h3>
+            <p>Completed a Photoshop Certificate Course at <strong>Live College</strong> in 2021.</p>
+            <a href="#" onclick="openPopup('images/photoshop-certificate.jpg'); return false;">View Certificate</a>
+          </div>
         </div>
-    </section>
+      </section>
+      
+      <!-- Popup container -->
+      <div id="popup" class="popup" onclick="closePopup()">
+        <span class="close-btn">&times;</span>
+        <img id="popup-img" src="" alt="Certificate Preview">
+      </div>
+      
       
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2 class="reveal-left">Contact Me</h2>
         <p>Email: osha020325@gmail.com</p>
         <p>Phone: +94 70 205 4077</p>
-        <p>LinkedIn: <a href="www.linkedin.com/in/sapna-oshadhee-2481b2240">LinkedIn</a></p>
-        <p>GitHub: <a href="#">GitHub</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sapna-oshadhee-2481b2240">LinkedIn Link</a></p>
+        <p>GitHub: <a href="https://github.com/Oshadhee02">GitHub Link</a></p>
     </section>
 </body>
+
+<script src="scripts.js"></script>
+
 </html>
