@@ -138,6 +138,11 @@ ul {
 }
 
 /* Specific background images for each card */
+
+.project-card.cactusheaven {
+  background-image: url('images/cactusheaven.jpg');
+}
+
 .project-card.labmaster {
   background-image: url('images/labmaster.jpg');
 }
